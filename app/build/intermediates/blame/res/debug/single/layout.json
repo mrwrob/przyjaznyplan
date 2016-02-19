@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/advbigview.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/advbigview.xml"
+    },
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/breaktimelayout.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/breaktimelayout.xml"
+    },
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/advsmallview.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/advsmallview.xml"
+    },
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/gridiconlayout.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/gridiconlayout.xml"
+    },
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/planactivitiesbasicbig.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/planactivitiesbasicbig.xml"
+    },
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/advmediumview.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/advmediumview.xml"
+    },
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/planactivities.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/planactivities.xml"
+    },
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/rowlayout.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/rowlayout.xml"
+    },
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/planactivitiesbasicview.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/planactivitiesbasicview.xml"
+    },
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/finalscreenview.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/finalscreenview.xml"
+    },
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/planactivitiesbasicsmall.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/planactivitiesbasicsmall.xml"
+    },
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/basicmediumview.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/basicmediumview.xml"
+    },
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/rowlistlayoutsmall.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/rowlistlayoutsmall.xml"
+    },
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/breaknormallayout.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/breaknormallayout.xml"
+    },
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/basicbigview.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/basicbigview.xml"
+    },
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/basicsmallview.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/basicsmallview.xml"
+    },
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/rowlistlayout.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/rowlistlayout.xml"
+    },
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/rowlistlayoutbig.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/rowlistlayoutbig.xml"
+    },
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/advancedview.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/advancedview.xml"
+    },
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/activitylayout.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/activitylayout.xml"
+    },
+    {
+        "merged": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/build/intermediates/res/merged/debug/layout/advancedrowlistview.xml",
+        "source": "/home/wrobel/habit/przyjaznyplan/przyjaznyplan/app/src/main/res/layout/advancedrowlistview.xml"
+    }
+]

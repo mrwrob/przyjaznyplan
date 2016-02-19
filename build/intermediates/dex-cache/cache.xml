@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/wrobel/habit/przyjaznyplan/przyjaznyplan/appManager/build/intermediates/exploded-aar/przyjaznyplan/app2/unspecified/jars/libs/commons-io-2.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="59993bbf8808451d0c394193f427b1d825b04606">
+        <dex dex="/home/wrobel/habit/przyjaznyplan/przyjaznyplan/appManager/build/intermediates/pre-dexed/debug/commons-io-2.4_f0cce1b75c6463390ee43e6f22c983445958f2f8.jar" />
+    </item>
+    <item
+        jar="/home/wrobel/habit/przyjaznyplan/przyjaznyplan/appManager/build/intermediates/exploded-aar/przyjaznyplan/app2/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a1eddbb33d2335a90e6374fc7200c2158a41a358">
+        <dex dex="/home/wrobel/habit/przyjaznyplan/przyjaznyplan/appManager/build/intermediates/pre-dexed/debug/przyjaznyplan-app2-unspecified_7dc9de3f059d69c7ea136d0e00523a8c009a83c1.jar" />
+    </item>
+    <item
+        jar="/home/wrobel/habit/przyjaznyplan/przyjaznyplan/appManager/build/intermediates/exploded-aar/przyjaznyplan/app2/unspecified/jars/libs/opencsv-2.3.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8df3621a6dc0c166402612febcc5a23efcd75367">
+        <dex dex="/home/wrobel/habit/przyjaznyplan/przyjaznyplan/appManager/build/intermediates/pre-dexed/debug/opencsv-2.3_664c71bdf3de3b06732e8fd8a859015a904ddc4b.jar" />
+    </item>
+    <item
+        jar="/home/wrobel/habit/przyjaznyplan/przyjaznyplan/appManager/build/intermediates/exploded-aar/przyjaznyplan/FileChooser/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="190c47271b66c62f1dbc311cc468354ea4ea2990">
+        <dex dex="/home/wrobel/habit/przyjaznyplan/przyjaznyplan/appManager/build/intermediates/pre-dexed/debug/przyjaznyplan-FileChooser-unspecified_b05ea4511301f6e0c14f1fbc89a2d44ce5073f31.jar" />
+    </item>
+
+</items>

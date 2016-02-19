@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="row_background">#FFFFFF</color>
+    <color name="text_color">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <string name="ActivityDesc_example">Lorem ipsum blablabla</string>
+    <string name="Next_button">Następny</string>
+    <string name="Prev_button">Poprzedni</string>
+    <string name="app_name">Przyjazny Plan</string>
+    <string name="finished_btt_activity">Koniec</string>
+    <style name="AppTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>
