@@ -6,6 +6,8 @@
  */
 package com.przyjaznyplan.DbHelper;
 
+import static android.os.Environment.DIRECTORY_DOWNLOADS;
+
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Environment;
@@ -26,11 +28,33 @@ public class MySQLiteHelper  {
     private static Context context = null;
 
     public static synchronized SQLiteDatabase getDb(){
+        boolean isAvailable= false;
+        boolean isWritable= false;
+        boolean isReadable= false;
+        String state = Environment.getExternalStorageState();
+
+        if(Environment.MEDIA_MOUNTED.equals(state)) {
+            // Operation possible - Read and Write
+            isAvailable= true;
+            isWritable= true;
+            isReadable= true;
+        } else if (Environment.MEDIA_MOUNTED_READ_ONLY.equals(state)) {
+            // Operation possible - Read Only
+            isAvailable= true;
+            isWritable= false;
+            isReadable= true;
+        } else {
+            // SD card not available
+            isAvailable = false;
+            isWritable= false;
+            isReadable= false;
+        }
         if(db==null){
             try {
 //                db = SQLiteDatabase.openOrCreateDatabase(DATABASE_NAME, null);
 //                db = SQLiteDatabase.openOrCreateDatabase(Environment.getExternalStorageDirectory().toString().concat("/").concat(DATABASE_NAME), null);
-                String dir = context.getApplicationInfo().dataDir;
+//                String dir = context.getApplicationInfo().dataDir;
+                String dir = Environment.getExternalStoragePublicDirectory(DIRECTORY_DOWNLOADS).toString();
                 db = SQLiteDatabase.openOrCreateDatabase(dir.concat("/").concat(DATABASE_NAME), null);
                 boolean b =db.isOpen();
                 int v = db.getVersion();

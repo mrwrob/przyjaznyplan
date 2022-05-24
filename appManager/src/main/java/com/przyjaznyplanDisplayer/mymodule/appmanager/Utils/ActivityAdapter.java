@@ -317,7 +317,7 @@ public class ActivityAdapter extends ArrayAdapter<Activity> {
                         v.setBackgroundColor(Color.LTGRAY);
                     }
                 } else {
-                    label.setTextColor(Color.WHITE);
+                    label.setTextColor(Color.DKGRAY);
                     v.setBackgroundColor(Color.TRANSPARENT);
                 }
             }

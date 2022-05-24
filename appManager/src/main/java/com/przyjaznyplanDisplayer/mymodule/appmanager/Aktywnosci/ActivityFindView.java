@@ -49,7 +49,7 @@ public class ActivityFindView extends Activity implements AdapterView.OnItemClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_view);
         try {
-            mainListView = (ListView) findViewById(R.id.listView);
+            mainListView = findViewById(R.id.listView);
             activityDao = new ActivityDao(MySQLiteHelper.getDb());
         }catch (Exception e){
             System.out.println(e.getMessage());
