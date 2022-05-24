@@ -23,11 +23,15 @@ public class MySQLiteHelper  {
 
     private static final int DATABASE_VERSION = 70;
     private static SQLiteDatabase db;
+    private static Context context = null;
 
     public static synchronized SQLiteDatabase getDb(){
         if(db==null){
             try {
-                db = SQLiteDatabase.openOrCreateDatabase(Environment.getExternalStorageDirectory().toString().concat("/").concat(DATABASE_NAME), null);
+//                db = SQLiteDatabase.openOrCreateDatabase(DATABASE_NAME, null);
+//                db = SQLiteDatabase.openOrCreateDatabase(Environment.getExternalStorageDirectory().toString().concat("/").concat(DATABASE_NAME), null);
+                String dir = context.getApplicationInfo().dataDir;
+                db = SQLiteDatabase.openOrCreateDatabase(dir.concat("/").concat(DATABASE_NAME), null);
                 boolean b =db.isOpen();
                 int v = db.getVersion();
                 if(db.getVersion()!=DATABASE_VERSION){
@@ -45,7 +49,7 @@ public class MySQLiteHelper  {
     }
 
     public MySQLiteHelper(Context context) {
-
+        this.context = context;
     }
 
     //@Override

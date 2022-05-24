@@ -9,10 +9,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.przyjaznyplanDisplayer.mymodule.appmanager" >
     <uses-sdk
-        android:minSdkVersion="7"
-        android:targetSdkVersion="7" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+        android:minSdkVersion="21"
+        android:targetSdkVersion="30" />
+    <uses-permission android:name="android.permission.READ_WRITE_EXTERNAL_STORAGE" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/planmanagericon"
@@ -20,7 +19,7 @@
         <activity
             android:screenOrientation="landscape" android:configChanges="orientation|keyboardHidden"
             android:name="com.przyjaznyplanDisplayer.mymodule.appmanager.MainActivity"
-            android:label="@string/app_name" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -75,9 +74,18 @@
         <activity android:name=".PlanyZarzadzanie.PlanCurrentEditView" android:screenOrientation="landscape" android:configChanges="orientation|keyboardHidden">
         </activity>
 
-        <activity android:name="com.przyjaznyplanDisplayer.mymodule.appmanager.Users.UserListView" android:screenOrientation="landscape" android:configChanges="orientation|keyboardHidden"></activity>
-        <activity android:name="com.przyjaznyplanDisplayer.mymodule.appmanager.Users.CreateUserView" android:screenOrientation="landscape" android:configChanges="orientation|keyboardHidden"></activity>
-        <activity android:name="com.przyjaznyplanDisplayer.mymodule.appmanager.Users.EditUserView" android:screenOrientation="landscape" android:configChanges="orientation|keyboardHidden"></activity>
+        <activity
+            android:name="com.przyjaznyplanDisplayer.mymodule.appmanager.Users.UserListView"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity
+            android:name="com.przyjaznyplanDisplayer.mymodule.appmanager.Users.CreateUserView"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity
+            android:name="com.przyjaznyplanDisplayer.mymodule.appmanager.Users.EditUserView"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden" />
     </application>
 
 </manifest>

@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FileChooser/FileChooser.iml" filepath="$PROJECT_DIR$/FileChooser/FileChooser.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app2/app2.iml" filepath="$PROJECT_DIR$/app2/app2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/appManager/appManager.iml" filepath="$PROJECT_DIR$/appManager/appManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/przyjaznyplan.iml" filepath="$PROJECT_DIR$/przyjaznyplan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FileChooser/przyjaznyplan.FileChooser.iml" filepath="$PROJECT_DIR$/.idea/modules/FileChooser/przyjaznyplan.FileChooser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FileChooser/przyjaznyplan.FileChooser.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/FileChooser/przyjaznyplan.FileChooser.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FileChooser/przyjaznyplan.FileChooser.main.iml" filepath="$PROJECT_DIR$/.idea/modules/FileChooser/przyjaznyplan.FileChooser.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FileChooser/przyjaznyplan.FileChooser.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/FileChooser/przyjaznyplan.FileChooser.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/przyjaznyplan.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/przyjaznyplan.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/przyjaznyplan.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/przyjaznyplan.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/przyjaznyplan.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/przyjaznyplan.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/przyjaznyplan.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/przyjaznyplan.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app2/przyjaznyplan.app2.iml" filepath="$PROJECT_DIR$/.idea/modules/app2/przyjaznyplan.app2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app2/przyjaznyplan.app2.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app2/przyjaznyplan.app2.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app2/przyjaznyplan.app2.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app2/przyjaznyplan.app2.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app2/przyjaznyplan.app2.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app2/przyjaznyplan.app2.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appManager/przyjaznyplan.appManager.iml" filepath="$PROJECT_DIR$/.idea/modules/appManager/przyjaznyplan.appManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appManager/przyjaznyplan.appManager.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/appManager/przyjaznyplan.appManager.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appManager/przyjaznyplan.appManager.main.iml" filepath="$PROJECT_DIR$/.idea/modules/appManager/przyjaznyplan.appManager.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appManager/przyjaznyplan.appManager.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/appManager/przyjaznyplan.appManager.unitTest.iml" />
     </modules>
   </component>
 </project>

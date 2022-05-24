@@ -16,8 +16,6 @@
         android:id="@+id/activityListView"
         tools:listitem="@android:layout/simple_list_item_2"
         android:layout_marginBottom="10dp"
-        android:background="#000000"
-        android:divider="#b5b5b5"
         android:dividerHeight="1dp" />
 
 </RelativeLayout>

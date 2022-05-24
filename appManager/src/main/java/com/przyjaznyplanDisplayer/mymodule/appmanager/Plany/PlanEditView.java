@@ -52,6 +52,7 @@ public class PlanEditView extends Activity  {
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.plan_edit_view);
         if(getIntent().getExtras()!=null && getIntent().getExtras().get("PLAN")!=null){

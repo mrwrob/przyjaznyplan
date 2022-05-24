@@ -19,7 +19,7 @@
         android:focusable="false"
         android:textSize="20dp"
         android:textColor="#000000"
-        android:inputType="textFilter|textMultiLine|textNoSuggestions|"
+        android:inputType="textFilter|textMultiLine|textNoSuggestions"
         android:text="">
     </TextView>
 
