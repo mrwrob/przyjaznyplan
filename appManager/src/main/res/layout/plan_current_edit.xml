@@ -107,7 +107,7 @@
                 android:textSize="15sp"
                 android:layout_height="wrap_content"
                 android:text="@string/btn_save"
-                android:onClick="saveTemplate"
+                android:onClick="save"
                 android:id="@+id/button4"
                 android:layout_below="@id/button3"
                     android:layout_span="3" />

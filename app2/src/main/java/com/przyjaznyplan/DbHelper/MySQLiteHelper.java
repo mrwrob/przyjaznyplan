@@ -8,6 +8,7 @@ package com.przyjaznyplan.DbHelper;
 
 import static android.os.Environment.DIRECTORY_DOWNLOADS;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Environment;
@@ -16,6 +17,8 @@ import android.util.Log;
 
 import com.przyjaznyplan.factories.FactoryDataBaseSQL;
 import com.przyjaznyplan.factories.InsertSqlFactory;
+
+import java.io.File;
 
 //Funckje do tworzenia, upgrade bazy i insertow fejkowych danych
 public class MySQLiteHelper  {
@@ -27,6 +30,7 @@ public class MySQLiteHelper  {
     private static SQLiteDatabase db;
     private static Context context = null;
 
+    @SuppressLint("SetWorldWritable")
     public static synchronized SQLiteDatabase getDb(){
         boolean isAvailable= false;
         boolean isWritable= false;
@@ -55,7 +59,25 @@ public class MySQLiteHelper  {
 //                db = SQLiteDatabase.openOrCreateDatabase(Environment.getExternalStorageDirectory().toString().concat("/").concat(DATABASE_NAME), null);
 //                String dir = context.getApplicationInfo().dataDir;
                 String dir = Environment.getExternalStoragePublicDirectory(DIRECTORY_DOWNLOADS).toString();
+                File file = new File(dir.concat("/").concat(DATABASE_NAME));
+                Boolean newDbFile = ! file.exists();
+                if(!newDbFile) {
+
+                    file.setWritable(true, false);
+                    file.setReadable(true, false);
+                }
+                Boolean a1 = file.canRead();
+
                 db = SQLiteDatabase.openOrCreateDatabase(dir.concat("/").concat(DATABASE_NAME), null);
+
+                if(newDbFile) {
+                    File file2 = new File(dir.concat("/").concat(DATABASE_NAME));
+
+                    file2.setWritable(true, false);
+                    file2.setReadable(true, false);
+                }
+
+
                 boolean b =db.isOpen();
                 int v = db.getVersion();
                 if(db.getVersion()!=DATABASE_VERSION){
