@@ -12,31 +12,6 @@
     android:layout_height="fill_parent"
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true">
-    Button
-        android:layout_width="fill_parent"
-        android:layout_height="96dp"
-        android:text="Przydziel / Edytuj aktualny plan"
-        android:id="@+id/przydzielEdytujAktualnyPlan"
-        android:onClick="przydzielEdytujAktualnyPlanClick"
-        android:background="#fffdff00"
-        android:textSize="40dp"
-        android:textColor="#ff000000"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true" />
-    Button
-        android:layout_width="fill_parent"
-        android:layout_marginTop="10dp"
-        android:layout_height="96dp"
-        android:visibility="invisible"
-        android:text="Przegladaj aktualny plan"
-        android:id="@+id/przeglądajAktualnyPlan"
-        android:onClick="przeglądajAktualnyPlanClick"
-        android:background="#fffdff00"
-        android:textSize="40dp"
-        android:textColor="#ff000000"
-        android:layout_below="@+id/przydzielEdytujAktualnyPlan"
-        android:layout_alignParentLeft="true" />
-
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

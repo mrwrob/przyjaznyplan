@@ -427,16 +427,21 @@ public class BasicActivityView extends Activity implements View.OnLongClickListe
     public void play(String path, boolean reapeatable){
         if(mp == null || ((mp!=null)&&!mp.isPlaying())) {
             Uri uri = Uri.parse(path);
-            mp = new MediaPlayer();
-            try {
-                mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
-                mp.setDataSource(getApplicationContext(), uri);
-                mp.setLooping(reapeatable);
-                mp.prepare();
-                mp.start();
-            }catch (Exception e){
-                System.out.println(e.getMessage());
-                Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+            if(uri.toString().isEmpty()){
+                MediaPlayer beepSound = MediaPlayer.create(this, R.raw.beep);
+                beepSound.start();
+            } else {
+                mp = new MediaPlayer();
+                try {
+                    mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
+                    mp.setDataSource(getApplicationContext(), uri);
+                    mp.setLooping(reapeatable);
+                    mp.prepare();
+                    mp.start();
+                } catch (Exception e) {
+                    System.out.println(e.getMessage());
+                    Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                }
             }
         }else if(mp.isPlaying()){
             mp.stop();

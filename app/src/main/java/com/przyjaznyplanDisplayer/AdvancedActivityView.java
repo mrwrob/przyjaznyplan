@@ -28,6 +28,7 @@ import com.example.przyjaznyplan.R;
 import com.przyjaznyplan.DbHelper.MySQLiteHelper;
 import com.przyjaznyplan.dao.ActivityDao;
 import com.przyjaznyplan.models.Slide;
+import com.przyjaznyplan.models.UserPreferences;
 import com.przyjaznyplan.utils.BusinessLogic;
 import com.przyjaznyplanDisplayer.Utils.OnTimerClickInterface;
 import com.przyjaznyplanDisplayer.Utils.SlideAdvViewAdapter;
@@ -69,6 +70,7 @@ public class AdvancedActivityView extends Activity implements AdapterView.OnItem
                     player.stop();
                     player.reset();
                 }
+                UserPreferences a = Globals.GetUser().getPreferences();
                 play(Globals.GetUser().getPreferences().getTimerSoundPath(), true);
 
             }
@@ -264,16 +266,21 @@ public class AdvancedActivityView extends Activity implements AdapterView.OnItem
 
         if(player == null || ((player!=null)&&!player.isPlaying())) {
             Uri uri = Uri.parse(path);
-            player = new MediaPlayer();
-            try {
-                player.setAudioStreamType(AudioManager.STREAM_MUSIC);
-                player.setDataSource(getApplicationContext(), uri);
-                player.setLooping(reapeatable);
-                player.prepare();
-                player.start();
-            }catch (Exception e){
-                System.out.println(e.getMessage());
-                Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+            if(uri.toString().isEmpty()){
+                MediaPlayer beepSound = MediaPlayer.create(this, R.raw.beep);
+                beepSound.start();
+            } else {
+                player = new MediaPlayer();
+                try {
+                    player.setAudioStreamType(AudioManager.STREAM_MUSIC);
+                    player.setDataSource(getApplicationContext(), uri);
+                    player.setLooping(reapeatable);
+                    player.prepare();
+                    player.start();
+                }catch (Exception e){
+                    System.out.println(e.getMessage());
+                    Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                }
             }
         }else if(player.isPlaying()){
             player.stop();
@@ -443,7 +450,7 @@ public class AdvancedActivityView extends Activity implements AdapterView.OnItem
     public void onLongTimerClickFromAdapter(View position) {
         if(mainList.getPositionForView(position) == currentPosition){
             onLongTimerClick();
-            Toast.makeText(this,"Porusz w gore!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.move_up, Toast.LENGTH_LONG).show();
         }
     }
 }

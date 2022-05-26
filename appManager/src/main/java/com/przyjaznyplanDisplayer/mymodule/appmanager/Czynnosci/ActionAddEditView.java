@@ -77,7 +77,7 @@ public class ActionAddEditView extends Activity {
         }
     }
 
-    public void ustawObraz(View v){
+    public void setPicture(View v){
         //Intent intent = new Intent(this, FileDialogView.class);
         //startActivityForResult(intent,DODAJ_OBRAZ);
         Intent intent = new Intent(this, FileChooser.class);
@@ -90,7 +90,7 @@ public class ActionAddEditView extends Activity {
         startActivityForResult(intent, RequestCodes.FILE_CHOOSER_PIC);
     }
 
-    public void ustawDzwiek(View v){
+    public void setSound(View v){
         //Intent intent = new Intent(this, FileDialogView.class);
         //startActivityForResult(intent,DODAJ_OBRAZ);
         Intent intent = new Intent(this, FileChooser.class);
@@ -101,7 +101,7 @@ public class ActionAddEditView extends Activity {
         startActivityForResult(intent, RequestCodes.FILE_CHOOSER_SOUND);
     }
 
-    public void usunObraz(View v) {
+    public void removeSound(View v) {
         slide.setImagePath(null);
         ImageView activityImage = (ImageView) (findViewById(R.id.imageView));
         activityImage.setImageResource(R.drawable.t1);
@@ -109,7 +109,7 @@ public class ActionAddEditView extends Activity {
         usunObrazIcon.setVisibility(View.INVISIBLE);
     }
 
-    public void usunDzwiek(View v){
+    public void removePicture(View v){
         slide.setAudioPath(null);
         ImageView usunDzwiekIcon = (ImageView) (findViewById(R.id.imageView3));
         usunDzwiekIcon.setVisibility(View.INVISIBLE);
@@ -132,7 +132,7 @@ public class ActionAddEditView extends Activity {
         }
     }
 
-    public void zapisz(View v){
+    public void saveTemplate(View v){
         String name="";
         int time=0;
         EditText etName = (EditText) findViewById(R.id.editText);

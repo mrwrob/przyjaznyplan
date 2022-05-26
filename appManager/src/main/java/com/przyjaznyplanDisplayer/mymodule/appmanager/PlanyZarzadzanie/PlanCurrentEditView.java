@@ -93,7 +93,7 @@ public class PlanCurrentEditView extends Activity implements AdapterView.OnItemC
         int position = Integer.parseInt(v.getTag().toString());
         com.przyjaznyplan.models.Activity activity = plan.getActivities().get(position);
         if(activity.getId().equals(BusinessLogic.SYSTEM_ACTIVITY_GALLERY_ID)|| (activity.getTypeFlag()!=null && activity.getTypeFlag().equals(com.przyjaznyplan.models.Activity.TypeFlag.FINISHED_ACTIVITY_GALLERY.toString()))){
-            galleryActivityBrowseClick(v);
+            browseGalleryActivityClick(v);
         }else {
             intent.putExtra("ACTIVITY", activity);
             startActivityForResult(intent,RequestCodes.ACTIVITY_EDITED);
@@ -104,7 +104,7 @@ public class PlanCurrentEditView extends Activity implements AdapterView.OnItemC
         int position = Integer.parseInt(v.getTag().toString());
         com.przyjaznyplan.models.Activity activity = plan.getActivities().get(position);
         if(activity.getId().equals(BusinessLogic.SYSTEM_ACTIVITY_GALLERY_ID) || (activity.getTypeFlag()!=null && activity.getTypeFlag().equals(com.przyjaznyplan.models.Activity.TypeFlag.FINISHED_ACTIVITY_GALLERY.toString())) ){
-            galleryActivityBrowseClick(v);
+            browseGalleryActivityClick(v);
         }else {
             listAdapter.remove(position);
         }
@@ -128,7 +128,7 @@ public class PlanCurrentEditView extends Activity implements AdapterView.OnItemC
         }
     }
 
-    public void breakActivityBrowseClick(View v) {
+    public void browseBreakActivityClick(View v) {
         Intent intent = new Intent(this, PlanBrowseActivity.class);
         intent.putExtra("PLAN", this.plan);
         intent.putExtra("EDIT_EXECUTION", true);
@@ -136,7 +136,7 @@ public class PlanCurrentEditView extends Activity implements AdapterView.OnItemC
         startActivityForResult(intent,RequestCodes.BREAK_BROWSE);
     }
 
-    public void galleryActivityBrowseClick(View v) {
+    public void browseGalleryActivityClick(View v) {
         Intent intent = new Intent(this, PlanBrowseActivity.class);
         intent.putExtra("PLAN", this.plan);
         intent.putExtra("EDIT_EXECUTION", true);
@@ -310,7 +310,7 @@ public class PlanCurrentEditView extends Activity implements AdapterView.OnItemC
         } else {
             if(activity.getStatus()==null || !activity.getStatus().equals(com.przyjaznyplan.models.Activity.ActivityStatus.FINISHED.toString())) {
                 if (activity.getTypeFlag() != null && activity.getTypeFlag().equals(com.przyjaznyplan.models.Activity.TypeFlag.TEMP_ACTIVITY_GALLERY.toString())) {
-                    galleryActivityBrowseClick(view);
+                    browseGalleryActivityClick(view);
                 } else {
                     activity.setStatus(com.przyjaznyplan.models.Activity.ActivityStatus.FINISHED.toString());
                 }

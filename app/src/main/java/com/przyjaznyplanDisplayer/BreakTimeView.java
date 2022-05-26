@@ -235,7 +235,7 @@ public class BreakTimeView extends Activity implements OnItemClickListener {
                                            int index, long arg3) {
                 longClickedActivity = (com.przyjaznyplan.models.Activity) grid.getAdapter().getItem(index);
                 longpressed=true;
-                Toast.makeText(v.getContext(),"One more sec!", Toast.LENGTH_LONG).show();
+                Toast.makeText(v.getContext(),R.string.long_click, Toast.LENGTH_LONG).show();
                 return false;
             }
         });
@@ -385,18 +385,23 @@ public class BreakTimeView extends Activity implements OnItemClickListener {
         if(mp == null || ((mp!=null)&&!mp.isPlaying())) {
 
             Uri uri = Uri.parse(path);
-            mp = new MediaPlayer();
-            try {
-                mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
-                mp.setDataSource(getApplicationContext(), uri);
-                mp.setLooping(reapeatable);
-                mp.prepare();
-                mp.start();
+            if(uri.toString().isEmpty()){
+                MediaPlayer beepSound = MediaPlayer.create(this, R.raw.beep);
+                beepSound.start();
+            } else {
+                mp = new MediaPlayer();
+                try {
+                    mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
+                    mp.setDataSource(getApplicationContext(), uri);
+                    mp.setLooping(reapeatable);
+                    mp.prepare();
+                    mp.start();
 
 
-            }catch (Exception e){
-                System.out.println(e.getMessage());
-                Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                } catch (Exception e) {
+                    System.out.println(e.getMessage());
+                    Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                }
             }
         }else if(mp.isPlaying()){
             mp.stop();

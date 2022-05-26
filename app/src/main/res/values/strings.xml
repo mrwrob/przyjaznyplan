@@ -7,11 +7,16 @@
 
 <resources>
 
-    <string name="app_name">Przyjazny Plan</string>
-    <string name="Next_button">Następny</string>
-    <string name="Prev_button">Poprzedni</string>
+    <string name="app_name">Friendly Schedule</string>
+    <string name="Next_button">Next</string>
+    <string name="Prev_button">Previous</string>
     <string name="ActivityDesc_example">Lorem ipsum blablabla</string>
-	<string name="finished_btt_activity">Koniec</string>
+	<string name="finished_btt_activity">The End</string>
+    <string name="finish">The End</string>
+    <string name="toast_done">You completed all task!!!!!</string>
+    <string name="long_click">One more sec!</string>
+    <string name="move_up">Move up!</string>
+    <string name="unable_to_start">Unable to start the task</string>
     <color name="white">#FFFFFF</color>
 
 </resources>

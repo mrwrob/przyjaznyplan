@@ -96,7 +96,7 @@ public class UserListView extends Activity implements  TextWatcher, AdapterView.
         adapter.setChoosen(new ChoosenUserDao().getChoosenUser());
 
         Toast toast= Toast.makeText(getApplicationContext(),
-                "Zaznacz użytkownika w celu zastosowania jego ustawień", Toast.LENGTH_LONG);
+                R.string.select_user, Toast.LENGTH_LONG);
         toast.setGravity(Gravity.CENTER| Gravity.CENTER_HORIZONTAL, 0, 0);
         toast.show();
 

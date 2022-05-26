@@ -58,12 +58,12 @@ public class ActionList extends Activity {
     }
 
 
-    public void dodajNowaCzynnoscClick(View v) {
+    public void addNewActivity(View v) {
         Intent intent = new Intent(this, ActionAddEditView.class);
         startActivityForResult(intent, RequestCodes.ACTION_ADD_NEW);
     }
 
-    public void zapisz(View v) {
+    public void saveTemplate(View v) {
         Intent intent = new Intent();
         intent.putExtra("ACTIVITY", this.activity);
         setResult(RequestCodes.ACTIVITY_MANAGEMENT, intent);

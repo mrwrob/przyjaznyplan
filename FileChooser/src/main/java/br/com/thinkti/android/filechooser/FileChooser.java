@@ -127,7 +127,7 @@ public class FileChooser extends ListActivity {
 	}
 
 	private void onFileClick(Option o) {
-		Toast.makeText(this, "File Clicked: " + o.getName(), Toast.LENGTH_SHORT)
+		Toast.makeText(this, getString(R.string.file_clicked) + o.getName(), Toast.LENGTH_SHORT)
 				.show();
 	}
 		

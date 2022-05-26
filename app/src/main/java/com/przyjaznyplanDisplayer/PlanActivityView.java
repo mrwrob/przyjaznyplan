@@ -412,7 +412,7 @@ public class PlanActivityView  extends Activity implements OnItemClickListener, 
                                                int index, long arg3) {
                     longClickedActivity = (com.przyjaznyplan.models.Activity) mainListView.getAdapter().getItem(index);
                     longpressed=true;
-                    Toast.makeText(v.getContext(),"One more sec!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(v.getContext(),R.string.long_click, Toast.LENGTH_LONG).show();
                     return false;
                 }
             });
@@ -527,7 +527,7 @@ public class PlanActivityView  extends Activity implements OnItemClickListener, 
         try {
             startActivityForResult(intent, ACTIVITY_DONE);
         }catch (Exception e){
-            Toast.makeText(this,"Nie udało się uruchomić aktywności",Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.unable_to_start,Toast.LENGTH_LONG).show();
             System.out.println(e.getMessage());
         }
     }
@@ -661,7 +661,7 @@ public class PlanActivityView  extends Activity implements OnItemClickListener, 
             }
         }
         if(someActivityIsUnDone == false){
-            Toast.makeText(this, "Zrobiono wszystkie aktywnosci!!!!!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.toast_done, Toast.LENGTH_LONG).show();
             showFinalScreen();
             return false;
         }
@@ -805,16 +805,21 @@ public class PlanActivityView  extends Activity implements OnItemClickListener, 
     public void play(String path, boolean reapeatable){
         if(mp == null || ((mp!=null)&&!mp.isPlaying())) {
             Uri uri = Uri.parse(path);
-            mp = new MediaPlayer();
-            try {
-                mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
-                mp.setDataSource(getApplicationContext(), uri);
-                mp.setLooping(reapeatable);
-                mp.prepare();
-                mp.start();
-            }catch (Exception e){
-                System.out.println(e.getMessage());
-                Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+            if(uri.toString().isEmpty()){
+                MediaPlayer beepSound = MediaPlayer.create(this, R.raw.beep);
+                beepSound.start();
+            } else {
+                mp = new MediaPlayer();
+                try {
+                    mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
+                    mp.setDataSource(getApplicationContext(), uri);
+                    mp.setLooping(reapeatable);
+                    mp.prepare();
+                    mp.start();
+                } catch (Exception e) {
+                    System.out.println(e.getMessage());
+                    Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                }
             }
         }else if(mp.isPlaying()){
             mp.stop();

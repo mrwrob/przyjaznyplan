@@ -50,7 +50,7 @@ public class MainView extends Activity implements AdapterView.OnItemClickListene
     private void displaySlidesOfActivity(ChildActivity activity){
         List<String> values = new ArrayList<String>();
         if(activity.getSlides()==null || activity.getSlides().size()==0){
-            Toast toast = Toast.makeText(this,"No slideds assigned to activity " + activity.getTitle(),Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(this,"No slides assigned to activity " + activity.getTitle(),Toast.LENGTH_SHORT);
             slidesLisView.setAdapter(new ArrayAdapter<String>(this, R.layout.rowlistlayout, R.id.label, values));
             toast.show();
             return;
